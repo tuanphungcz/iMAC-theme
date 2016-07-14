@@ -15,17 +15,26 @@
     </head>
     <body>
       <div id="wrapper">
+        <!-- wrapper davat do urcitych sekci, neobalovat wrapper vice sekci. Pouzit div misto id, jelikoz to budes pouzivat na vice mistech -->
         <div class="about">
+          <!-- pouzit html5 tag section misto napr <section id="about"> -->
+          <!-- u ruznych section takhle, treba "about" pouzivej id, jelikoz to budes mit jen jednou -->
           <h1>Patrik Svoboda</h1>
           <p>Hi there! My name is Patrick and I create stunning designs for websites and mobile applications. My dream is to be part of startups because I want to produce something fantastic for apps that are revolutionary.</p>
           <p>Yep. I also can produce a little magic with coding. Just have a<a href="https://github.com/thesvob" target="_blank"><span class="red"> look.</span></a></p>
           <ul class="margin-top">
+            <!-- zde neni treba davat ul classu margin-top -->
             <li><div><a href="https://dribbble.com/svob" target="_blank"><button class="button button-portfolio" style="vertical-align:middle"><span>dribbble</span></button></a></div></li>
+            <!-- do <a> se nema davat button, udelej normalne <a> ktery nastylujes do buttonu. Button je pro <form> -->
             <li><div><a href="https://www.linkedin.com/in/patrik-svoboda-59526041" target="_blank"><button class="button button-contact" style="vertical-align:middle"><span>Linkedin</span></button></a></div></li>
+            <!-- v li neni treba mit navic ten div -->
+            <!-- nadefinovat style="vertical-align:middle" v css -->
           </ul>
         </div>
         <div id="footer">
+          <!-- nepouzivej div id=footer, existuje html5 tag <footer> -->
           <div class="center-relative">
+            <!-- nepotrebujes zde classu center-relative. V css muzes nadefinovat napr. #footer > div -> to znamena primi potomek footeru -->
             <ul>
               <li><a href="#" target="_blank"><i class="fa fa-medium fa-lg" aria-hidden="true"></i></a></li>
               <li><a href="#" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
@@ -35,7 +44,11 @@
         </div>
         <img src="assets/images/monitor.png" alt="iMac monitor" id="monitor">
         <img src="assets/images/keyboard.png" alt="iMac keyboard" id="keyboard">
+        <!-- klavesnici vnorit do buttonu -->
         <img src="assets/images/mouse.png" alt="iMac mouse" id="mouse"></div>
+        <!-- obrazek myse by mela byt v aboout section -->
       </div>
+      <!-- tenhle div ti tu prebyva, nema zacinajici div tag -->
+      <!-- nainstaluj si do bracket beautify, upravi ti to kod  :) -->
     </body>
 </html>
